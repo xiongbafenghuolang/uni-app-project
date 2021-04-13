@@ -6,7 +6,9 @@ import {
     router,
     RouterMount
 } from './router'
+import uView from "uview-ui"
 
+Vue.use(uView)
 Vue.use(router)
 Vue.config.productionTip = false
 Vue.prototype.$api = api

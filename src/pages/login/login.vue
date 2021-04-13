@@ -1,8 +1,6 @@
 <template>
 	<view class="container">
-
-		<button type="default" @click="login">登录</button>
-
+		<u-button type="default" @tap="login">登录</u-button>
 	</view>
 </template>
 
@@ -27,9 +25,9 @@ export default {
             // })
             this.$store.dispatch('user/login', this.loginForm)
                 .then(res => {
-                   this.$Router.pushTab({
-                       name: 'home'
-                   })
+                    this.$Router.pushTab({
+                        name: 'home'
+                    })
                 })
         }
     }
@@ -46,7 +44,8 @@ export default {
 	.status-bar {
 		bottom: calc(var(--window-bottom) + 10px);
 		width: 100%;
-		> text {
+
+		>text {
 			color: red;
 		}
 	}
