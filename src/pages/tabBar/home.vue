@@ -2,6 +2,12 @@
 	<view class="content">
 		<u-action-sheet :list="list" v-model="show"></u-action-sheet>
 		<u-button type="default" @tap="clickShow">弹出</u-button>
+		<!-- 字体图标 -->
+		<text class="iconfont icon-send"></text>
+		<text class="iconfont icon-weixinhaoyou"></text>
+		<!-- uni-app引入彩色图标 -->
+		<text class="t-icon t-icon-send"></text>
+		<text class="t-icon t-icon-weixinhaoyou"></text>
 	</view>
 </template>
 
@@ -30,4 +36,7 @@ export default {
 </script>
 
 <style lang="scss">
+	.icon-send {
+		color: red;
+	}
 </style>

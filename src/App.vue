@@ -14,4 +14,7 @@ export default {
 
 <style lang="scss">
 	@import "uview-ui/index.scss";
+	@import './static/iconfont/iconfont.css'; // 矢量图标
+	@import './static/iconfont/iconfont-weapp-icon.css'; // 彩色图标
+
 </style>

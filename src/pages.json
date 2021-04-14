@@ -4,7 +4,7 @@
 		// 下载安装方式
 		// "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 		// npm安装方式
-		 "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
@@ -32,7 +32,34 @@
 			"meta": {
 				"title": "首页"
 			},
-			"style": {}
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							// 右边
+							{
+								"color": "#999999",
+								"colorPressed": "#BBBBBB",
+								"float": "left",
+								"fontSize": "14px",
+								"text": "\ue606",
+								"fontSrc": "/static/iconfont/iconfont.ttf",
+								"width": "70px"
+							},
+							// 右边
+							{
+								"color": "#999999",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "14px",
+								"text": "视频",
+								"width": "40px"
+							}
+						],
+						"autoBackButton": false
+					}
+				}
+			}
 		},
 		{
 			"path": "pages/tabBar/message",
